@@ -1,8 +1,9 @@
-/* common style  */
+/* common style  start*/
 body{
     font-family: 'Work Sans', sans-serif;
-    /* box-sizing: border-box; */
+   
 }
+
 .primary-color{
     color: #131313;
 }
@@ -19,14 +20,15 @@ body{
     padding: 20px 25px;
     cursor: pointer;
 }
+/* common style end  */
 
-/* header style  */
+/* header style start  */
 header{
     background-color: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
    
 }
-
+/* nav style start  */
 nav{
     display: flex;
     justify-content: space-between;
@@ -53,6 +55,8 @@ nav a{
     font-size: 18px;
     font-weight: 500;
 }
+/* nav style end  */
+/* banner style start  */
 .banner-content{
     max-width: 800px;
     text-align: center;
@@ -62,32 +66,87 @@ nav a{
 .banner-title{
     font-size: 64px;
     font-weight: 700;
+    word-wrap: break-word;
 }
-.banner-description{
-    font-size: 16px;
-    font-weight: 400;
-}
+
 .banner-img{
     width: 100%;
 }
+/* banner style end  */
+/* header style end  */
+
+/* main style start  */
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
+/* main style end  */
+
+/* teams style start  */
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.teams-container div{
+    width: 50%;
+}
+.teams-images{
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(2,1fr);
+}
+.teams-images img{
+    height: 250px;
+    width: 100%;
+}
+.teams-content{
+    box-sizing: border-box;
+    padding: 75px;
+}
+.teams-content-title{
+    font-size: 45px;
+    word-wrap: break-word;
+}
+.text-quick-list{
+    font-weight: 500;
+}
+.text-of-our,.text-features{
+    font-weight: 700;
+}
+.text-features{
+    color: #FF900E;
+}
+/* team style end  */
 
 /* media queries  */
-/* for small device */
+
+/* for small device  start */
 @media screen and (max-width:767px){
-    header{
+    header,.teams-content{
         padding: 20px;
     }
-    nav{
+    nav,.teams-container{
         flex-direction: column;
     }
+    .teams-container div{
+        width: 100%;
+    }
+    .teams-images{
+        grid-template-columns: 1fr;
+    }
 }
+/* for mobile device end  */
 
 /* for medium device  */
 @media screen and (min-width:768px) and (max-width:991px) {
     header{
         padding: 50px;
     }
-    nav{
+    nav,.teams-container{
         flex-direction: column;
     }
+    .teams-container div{
+        width: 100%;
+    }
 }
+/* for medium device end  */
