@@ -20,6 +20,10 @@ body{
     padding: 20px 25px;
     cursor: pointer;
 }
+.title-text{
+    font-weight: 700;
+    font-size: 45px;
+}
 /* common style end  */
 
 /* header style start  */
@@ -36,8 +40,6 @@ nav{
     gap: 20px;
 }
 .nav-title{
-    font-size: 45px;
-    font-weight: 700;
     margin: 0;
 }
 nav ul{
@@ -110,9 +112,7 @@ main{
 .text-quick-list{
     font-weight: 500;
 }
-.text-of-our,.text-features{
-    font-weight: 700;
-}
+
 .text-features{
     color: #FF900E;
 }
