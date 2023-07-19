@@ -291,7 +291,7 @@ footer {
 @media screen and (max-width:767px) {
 
     header,
-    .teams-content {
+    .teams-content{
         padding: 20px;
     }
 
@@ -319,6 +319,9 @@ footer {
     .sponsors-images {
         grid-template-columns: repeat(3, 1fr);
     }
+    footer{
+        margin: 50px 20px;
+    }
 
 }
 
@@ -327,7 +330,7 @@ footer {
 /* for medium device  */
 @media screen and (min-width:768px) and (max-width:991px) {
     header {
-        padding: 50px;
+        padding: 30px;
     }
 
     nav,
@@ -337,7 +340,7 @@ footer {
     }
 
     main {
-        padding: 0 40px;
+        padding: 0 30px;
     }
 
     .teams-container>div,
@@ -349,6 +352,9 @@ footer {
     .fact-cards-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
+    }
+    footer{
+        margin: 50px 40px;
     }
 }
 
