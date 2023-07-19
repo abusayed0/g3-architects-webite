@@ -168,29 +168,39 @@ main {
     margin-top: 20px;
 }
 
+
+.features-image{
+    position: relative;
+}
 .features-image img {
     width: 100%;
     height: 100%;
 }
 
 .ten-years-badge {
+    height: 150px;
+    width: 300px;
     border-radius: 8px;
     background-color: #FF900E;
     color: #FFF;
-    padding: 40px;
     text-align: center;
     position: absolute;
+    left: 50%;
+    translate: -50% -75px;
 }
-.ten-years-badge h2{
+
+.ten-years-badge h2 {
     font-size: 65px;
     font-weight: 700;
     margin: 0;
 }
-.ten-years-badge p{
+
+.ten-years-badge p {
     font-size: 25px;
     font-weight: 500;
     margin: 5px 0 0 0;
 }
+
 /* features section style end */
 
 /* .some fact style start  */
@@ -267,7 +277,7 @@ main {
     }
 
     nav,
-    .teams-container {
+    .teams-container,.features {
         flex-direction: column;
     }
 
@@ -275,7 +285,8 @@ main {
         padding: 0 20px;
     }
 
-    .teams-container>div {
+    .teams-container>div,.feautes-content,
+    .features-image  {
         width: 100%;
     }
 
@@ -299,7 +310,7 @@ main {
     }
 
     nav,
-    .teams-container {
+    .teams-container,.features {
         flex-direction: column;
     }
 
@@ -307,7 +318,8 @@ main {
         padding: 0 40px;
     }
 
-    .teams-container>div {
+    .teams-container>div,.feautes-content,
+    .features-image{
         width: 100%;
     }
 
